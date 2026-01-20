@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Matthew Hicks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html">Matthew Hicks</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="contact-page">
+            <p>I'd love to hear from you! Whether you have questions about my writing, want to discuss music, or just want to say hello.</p>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:matti.hixx@gmail.com" id="email-link">matti [dot] hixx [at] gmail [dot] com</a></p>
+            </div>
+
+            <script>
+                // Decode email to protect from spam bots
+                const emailLink = document.getElementById('email-link');
+                const user = 'matti.hixx';
+                const domain = 'gmail.com';
+                emailLink.href = 'mailto:' + user + '@' + domain;
+                emailLink.textContent = user + '@' + domain;
+            </script>
+
+            <p class="small-note">I try to respond to all messages within a few days.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Matthew Hicks</p>
+    </footer>
+</body>
+</html>

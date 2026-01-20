@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing — Matthew Hicks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html">Matthew Hicks</a></h1>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="writing.html" class="active">Writing</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="blog-posts-list">
+                <article class="blog-post">
+                    <h3><a href="posts/Fourth-Draft_20_02_2022.html">Writing my first novel through 8 drafts</a></h3>
+                    <p class="date">February 20, 2022</p>
+                    <p>I didn't know I was going to write a novel when I joined the online writing community The Novelry. Perhaps a memoir, perhaps some short stories. Then suddenly, a story blossomed. A plot. Characters. And I became possessed...</p>
+                    <a href="posts/Fourth-Draft_20_02_2022.html" class="read-more">Read more →</a>
+                </article>
+
+                <article class="blog-post">
+                    <h3><a href="posts/The-Wonder-In-Her-Eyes_17_06_2017.html">The wonder in her eyes</a></h3>
+                    <p class="date">June 17, 2017</p>
+                    <p>"People first, then money, then things," Suze Orman used to say on her television show. This is a phrase I kept repeating to myself when I booked a flight for my mom to come to Europe...</p>
+                    <a href="posts/The-Wonder-In-Her-Eyes_17_06_2017.html" class="read-more">Read more →</a>
+                </article>
+
+                <article class="blog-post">
+                    <h3><a href="posts/A-Raucous-Life_13_02_2013.html">A Raucous Life</a></h3>
+                    <p class="date">February 13, 2013</p>
+                    <p>I turned around as soon as he started mooning a group of schoolchildren. I couldn't take it. Daniel was just too much to handle. I began walking ahead of him, increasing the distance between us...</p>
+                    <a href="posts/A-Raucous-Life_13_02_2013.html" class="read-more">Read more →</a>
+                </article>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Matthew Hicks</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

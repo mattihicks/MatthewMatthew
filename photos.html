@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos — Matthew Hicks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a href="index.html">Matthew Hicks</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="photos.html" class="active">Photos</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="photo-grid">
+                <figure class="photo-figure">
+                    <img src="images/gallery/1000001_10153678761680459_1694079427_n.jpg" alt="Photo" class="photo-item">
+                    <figcaption>Switzerland with Gideon</figcaption>
+                </figure>
+                <figure class="photo-figure">
+                    <img src="images/gallery/20431668_10158994252370459_4362556233471961097_n.jpg" alt="Photo" class="photo-item">
+                    <figcaption>Amalfi coast in Italy</figcaption>
+                </figure>
+                <figure class="photo-figure">
+                    <img src="images/gallery/25552050_10159637617635459_2070077081452023646_n.jpg" alt="Photo" class="photo-item">
+                    <figcaption>India</figcaption>
+                </figure>
+                <figure class="photo-figure">
+                    <img src="images/gallery/38904040_10160621344710459_6102647206148308992_o.jpg" alt="Photo" class="photo-item">
+                    <figcaption>Corfu</figcaption>
+                </figure>
+                <figure class="photo-figure">
+                    <img src="images/gallery/IMG_4396%202.jpeg" alt="Photo" class="photo-item">
+                    <figcaption>Rome</figcaption>
+                </figure>
+                <figure class="photo-figure">
+                    <img src="images/gallery/IMG_4420.jpeg" alt="Photo" class="photo-item">
+                    <figcaption>Rome</figcaption>
+                </figure>
+                <figure class="photo-figure">
+                    <img src="images/gallery/IMG_7997.JPG" alt="Photo" class="photo-item">
+                    <figcaption>Tel Aviv with Daniel Ryan Spaulding</figcaption>
+                </figure>
+                <figure class="photo-figure">
+                    <img src="images/gallery/IMG_7999.JPG" alt="Photo" class="photo-item">
+                    <figcaption>Heaven</figcaption>
+                </figure>
+            </div>
+        </article>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Matthew Hicks</p>
+    </footer>
+
+    <script>
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const photos = document.querySelectorAll('.photo-item');
+        const closeBtn = document.querySelector('.lightbox-close');
+
+        photos.forEach(photo => {
+            photo.addEventListener('click', function() {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = this.src;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+</body>
+</html>
