@@ -638,6 +638,10 @@ footer p {
     margin: 0 auto;
 }
 
+.music-page p:first-of-type {
+    margin-top: 2rem;
+}
+
 .music-intro {
     font-size: 1.05rem;
     color: #4a4a4a;
