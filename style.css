@@ -939,6 +939,7 @@ footer p {
 .guestbook-content.retro-vibes {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 3rem 2rem;
+    margin-top: 2rem;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(102, 126, 234, 0.4);
     border: 3px solid #ffd700;
