@@ -228,9 +228,11 @@
         const lightboxImg = document.getElementById('lightbox-img');
         const photos = document.querySelectorAll('.photo-item');
         const closeBtn = document.querySelector('.lightbox-close');
+        let currentPhotoIndex = 0;
 
-        photos.forEach(photo => {
+        photos.forEach((photo, index) => {
             photo.addEventListener('click', function() {
+                currentPhotoIndex = index;
                 lightbox.style.display = 'flex';
                 lightboxImg.src = this.src;
                 document.body.style.overflow = 'hidden';
@@ -246,6 +248,25 @@
             if (e.target === lightbox) {
                 lightbox.style.display = 'none';
                 document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', function(e) {
+            if (lightbox.style.display === 'flex') {
+                if (e.key === 'ArrowRight') {
+                    // Next photo
+                    currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+                    lightboxImg.src = photos[currentPhotoIndex].src;
+                } else if (e.key === 'ArrowLeft') {
+                    // Previous photo
+                    currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+                    lightboxImg.src = photos[currentPhotoIndex].src;
+                } else if (e.key === 'Escape') {
+                    // Close lightbox
+                    lightbox.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
             }
         });
     </script>
