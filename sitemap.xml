@@ -1,46 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://matthewmatthew.com/</loc>
-    <lastmod>2026-01-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://matthewmatthew.com/about.html</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://matthewmatthew.com/writing.html</loc>
-    <lastmod>2026-01-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://matthewmatthew.com/music.html</loc>
-    <lastmod>2026-01-22</lastmod>
+    <loc>https://matthewmatthew.com/contact.html</loc>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://matthewmatthew.com/photos.html</loc>
-    <lastmod>2026-01-22</lastmod>
+    <loc>https://matthewmatthew.com/guestbook.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://matthewmatthew.com/</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://matthewmatthew.com/music.html</loc>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://matthewmatthew.com/newsletter.html</loc>
-    <lastmod>2026-01-22</lastmod>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://matthewmatthew.com/guestbook.html</loc>
-    <lastmod>2026-01-22</lastmod>
+    <loc>https://matthewmatthew.com/photos.html</loc>
+    <lastmod>2026-02-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://matthewmatthew.com/writing.html</loc>
+    <lastmod>2026-02-03</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://matthewmatthew.com/posts/I-Wrote-Four-First-Drafts-Of-My-Second-Novel_30_01_2026.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://matthewmatthew.com/posts/Investing-In-My-Digital-Self_20_01_2026.html</loc>
@@ -58,31 +70,31 @@
     <loc>https://matthewmatthew.com/posts/Out-Of-Fear-Or-Whispers-Of-Yes_14_09_2025.html</loc>
     <lastmod>2025-09-14</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://matthewmatthew.com/posts/The-Beautiful-Overwhelm_12_09_2025.html</loc>
     <lastmod>2025-09-12</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://matthewmatthew.com/posts/Learning-To-Honor-Your-Art_11_09_2025.html</loc>
     <lastmod>2025-09-11</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://matthewmatthew.com/posts/The-Whole-Atmosphere_28_06_2025.html</loc>
     <lastmod>2025-06-28</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://matthewmatthew.com/posts/Novel-Writer-As-Casting-Agent_27_06_2025.html</loc>
     <lastmod>2025-06-27</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://matthewmatthew.com/posts/The-Netflixication-Of-The-Novel_15_09_2024.html</loc>
@@ -94,7 +106,7 @@
     <loc>https://matthewmatthew.com/posts/Fourth-Draft_20_02_2022.html</loc>
     <lastmod>2022-02-20</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://matthewmatthew.com/posts/The-Wonder-In-Her-Eyes_17_06_2017.html</loc>
